@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    height: 100vh;
+}
+
+.colorFondo{
+    background-color: rgb(69, 69, 69);
+}
+
+.navbar-light .navbar-nav .verde{
+   color: rgb(19, 158, 30);
+}
+
+.carrusel {
+    padding-right: 100px;
+  }
+
+#carouselExampleControls img{
+    filter: brightness(50%);
+  }
+  
+.tituloConferencia, .textoConferencia{
+    
+    color:white;
+    text-align: right;
+}
+
+.btn-outline-secondary {
+    color: whitesmoke;
+    border-color: whitesmoke;
+  }
+
+.icon{
+    color:rgb(237, 29, 157);
+    font-size: 5rem;
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    
+}
+
+#cards {
+    margin-bottom: 40px;
+  }
+  
+  .card-oradores:hover {
+    transition: 1.3s ease;
+    transform:scale(1.02);
+  }
+
+  .card-img-top {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .oradores {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .icon-prev-next {
+    display: none;
+  }
+
+  .btnsConferencia{
+    margin: 0%;
+    padding: 0%;
+  }
+.honolulu{
+    height: 60vh;
+}
+
+.izquierda{
+    background-image:url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    border:1px solid white;
+}
+
+.derecha{
+    background-color: rgb(57, 57, 57);
+    color:white;
+    height: 100%;
+    border:1px solid white;
+}
+
+.txt-white{
+    color: whitesmoke;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(65, 65, 65);
+    text-align: justify;
+}
+
+#container-oradores {
+    margin-top: 20px;
+    width: 50%;
+  }
+  
+  footer {
+      background-color: #224a62 ;;
+      margin-top: 20px;
+  }
+  
+  .navFooter a:hover {
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: rgb(43, 43, 83);
+  }  
+
+u{
+    text-decoration:underline dotted;
+}
+
+.btn-success-submit {
+    width: 100%;
+    background-color: #81c53d;
+    color: whitesmoke;
+  }
+
+  .btn-success-submit:hover {
+    width: 100%;
+    background-color: #609130;
+    color: whitesmoke;
+  }
+
+/*breakpoint para celular de 0 a 768px*/
+@media screen and (max-width: 767px)   {
+    .contenedorNav{
+        background-color: rgb(50, 157, 245);
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion .listaNav{
+        flex-direction: column;
+    }
+    .honolulu{
+       height: initial;
+    }
+    .izquierda{
+        height: 40vh;
+    }
+    .derecha{
+        height: 40vh;
+    }
+   
+
+}
+
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /*se cargaron los estilos dentro de las llaves*/
+    .contenedorNav{
+        background-color: rgb(245, 213, 50);
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/*notebook*/
+@media screen and (min-width:1024px) and (max-width: 1400px) {
+    .contenedorNav{
+        background-color: rgb(245, 50, 222);
+    }
+
+}
+
+@media screen and (min-width:1401px) {
+    
+}
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 767px) {
+    
+    .carrusel {
+        padding: 0px;
+        margin: 0%;
+    }
+
+    #carouselExampleControls img{
+        filter: brightness(50%);
+    }
+  
+    .tituloConferencia, .textoConferencia{
+        font-size: x-small;
+        color:white;
+        text-align: center;
+        margin: 0%;
+    }
+
+    .btnsConferencia{
+        margin:0%;
+        padding: 0%;
+        align-self: center;
+    }
+    .btn {
+       width: fit-content;
+       padding: 0%;
+        display: inline;
+        font-size: xx-small;
+    }
+  }
